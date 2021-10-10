@@ -21,10 +21,10 @@ public class Segitiga extends AppCompatActivity {
         proses.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                int a = Integer.parseInt(alas.getText().toString());
-                int b = Integer.parseInt(tinggi.getText().toString());
-                int hasil  = (a*b) / 2;
-                luas.setText(Integer.toString(hasil));
+                double a = Double.parseDouble(alas.getText().toString());
+                double b = Double.parseDouble(tinggi.getText().toString());
+                double hasil  = (a*b) / 2;
+                luas.setText(Double.toString(hasil));
             }
         });
     }
